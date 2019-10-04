@@ -1,5 +1,8 @@
-# Copyright 2018 The TensorFlow Authors. All Rights Reserved.
-#
+# This file is based on the TensorFlow dockerfiles available on GitHub 
+# https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/dockerfiles. 
+# In contrast to the underlying docker image and docker file it enables 
+# the usage of jupyterlab instead of plain jupyter. 
+# ============================================================================
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -12,10 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ============================================================================
-# This file is based on the tensorflow/tensorflow dockerfiles. It enables the usage of jupyterlab.
 FROM ai2ys/tensorflow:2.0.0-gpu-py3-jupyterlab
-
-MAINTAINER Sylvia <ai.two.ys@gmail.com>
 
 WORKDIR /
 
