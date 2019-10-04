@@ -18,6 +18,7 @@ This docker image was created using the following fork of the TensorFlow project
 * gpu
 * py3
 * jupyterlab
+
 It is equal to the docker image `tensorflow/tensorflow:2.0.0-gpu-jupyterlab` except that it uses JupyterLab instead of plain jupyter.
 The ready to use docker image can be found here: 
 [https://hub.docker.com/r/ai2ys/tensorflow](https://hub.docker.com/r/ai2ys/tensorflow)
