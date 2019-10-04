@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ============================================================================
-FROM ai2ys/tensorflow:tf-2.0.0-gpu-py3-jupyterlab
+FROM ai2ys/tensorflow:2.0.0-gpu-py3-jupyterlab
 
 WORKDIR /
 
@@ -43,7 +43,6 @@ RUN pip3 install --no-cache-dir jupyter-tabnine \
     && jupyter serverextension enable --py jupyter_tabnine 
 
 RUN pip3 install --no-cache-dir \
-    numpy \
     scipy \
     pandas \
     scikit-learn \
