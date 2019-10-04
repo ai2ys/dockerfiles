@@ -12,7 +12,7 @@ Instructions for building the dockerfiles. The corresponding ready to use docker
 docker build --file <relative dockerfile path> --tag <tagname> .
 ```
 
-### Tagname `tf-2.0.0-gpu-py3-juypterlab`
+### Tagname `2.0.0-gpu-py3-juypterlab`
 This docker image was created using the following fork of the [TensorFlow project](https://github.com/tensorflow/tensorflow):
 <br>https://github.com/ai2ys/tensorflow/
 <br>I followed the instruction of the TensorFlow authors and added the file corresponding [partial file for JupyterLab](https://github.com/ai2ys/tensorflow/blob/master/tensorflow/tools/dockerfiles/partials/jupyterlab.partial.Dockerfile), edited the spec.yml, and followed their instructions for building the image. This image was build using the options:
