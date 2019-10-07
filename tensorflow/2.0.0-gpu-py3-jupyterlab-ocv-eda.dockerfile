@@ -53,4 +53,6 @@ RUN pip3 install --no-cache-dir \
     opencv-python \
     opencv-contrib-python \
     imgkit \
-    pdfkit 
+    pdfkit \
+    psutil
+
