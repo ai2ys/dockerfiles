@@ -1,0 +1,1 @@
+docker build --file ./2.0.0-gpu-py3-jupyterlab-ocv-eda.dockerfile --tag ai2ys/tensorflow-opencv-eda:2.0.0-gpu-jupyterlab .

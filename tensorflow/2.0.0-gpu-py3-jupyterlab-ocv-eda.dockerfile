@@ -22,19 +22,22 @@ WORKDIR /
 # plot graphs
 RUN apt-get update \
     && apt-get install -y python-pydot graphviz \
+    && pip3 install --no-cache-dir pydot graphviz \
     && apt-get autoremove -y \
-    && apt-get autoclean -y \
-    && pip3 install --no-cache-dir pydot graphviz
+    && apt-get autoclean -y \  
+    && rm -rf /var/lib/apt/lists/* 
+
 
 # ipywidgets
 RUN apt-get update \
     && apt-get install -y nodejs npm \
-    && apt-get autoremove -y \  
-    && apt-get autoclean -y \  
     && pip install --no-cache-dir nodejs npm \
     && pip3 install --no-cache-dir ipywidgets \
     && jupyter nbextension enable --py widgetsnbextension \
-    && jupyter labextension install @jupyter-widgets/jupyterlab-manager
+    && jupyter labextension install @jupyter-widgets/jupyterlab-manager \
+    && apt-get autoremove -y \
+    && apt-get autoclean -y \  
+    && rm -rf /var/lib/apt/lists/*  
 
 # tabnine
 RUN pip3 install --no-cache-dir jupyter-tabnine \
